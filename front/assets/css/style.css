@@ -555,3 +555,145 @@
    background: #EEE;
    border-radius: 7px
 }
+
+.paymethods {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+   column-gap: 20px;
+   margin-top: 50px;
+}
+.paymethods button{
+   background: #EEE;
+   border: none;
+   padding: 10px 7px;
+   font-weight: 700;
+   border-radius: 30px
+}
+
+.addFavorite {
+  cursor: pointer;
+}
+.good__content__footer {
+   display: grid;
+   grid-template-columns: 50% 50%;
+}
+.good__content__listeners__top {
+   width: 350px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 20px;
+   text-align: center;
+}
+.good__content__listeners__top div {
+   background: #EEE;
+   font-size: 20px;
+   padding: 6px 0;
+   cursor: pointer;
+}
+.good__content__listeners__content {
+   width: 100%;
+   border: 1px solid rgba(27, 31, 35, 0.15);
+}
+.active__cont__btn {
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-bottom: none;
+}
+.active__cont__disble {
+   display: none;
+}
+.related__productes {
+   padding: 25px 0 0 20px;
+}
+.related__productes .content__title {
+   width: 100%;
+   font-size: 14px;
+}
+.related__productes .content__title .content__title__left {
+   font-size: 18px;
+}
+.related__productes__wrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 10px;
+   margin-top: 20px;
+}
+.related__productes__wrapper button {
+   font-size: 10px;
+}
+
+.related__productes__wrapper .content__goods__footer__price {
+   font-size: 13px;
+} 
+
+.related__productes__wrapper .content__goods__title {
+   font-size: 11px;
+} 
+.good__content__listeners__content__comment>div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+}
+.good__content__listeners__content__comment__content {
+   width: 100%;
+}
+
+.second__cont {
+   padding: 10px;
+}
+
+.good__content__listeners__content__yourComment textarea {
+   height: 150px;
+}
+
+
+.good__content__listeners__content__yourComment button {
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+
+#commentLabel {
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.rate {
+   float: left;
+   height: 46px;
+   padding: 0 10px;
+}
+.rate:not(:checked) > input {
+   position:absolute;
+   top:-9999px;
+}
+.rate:not(:checked) > label {
+   float:right;
+   width:1em;
+   overflow:hidden;
+   white-space:nowrap;
+   cursor:pointer;
+   font-size:30px;
+   color:#ccc;
+}
+.rate:not(:checked) > label:before {
+   content: '★ ';
+}
+.rate > input:checked ~ label {
+   color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+   color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+   color: #c59b08;
+}

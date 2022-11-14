@@ -40,3 +40,27 @@ function good__slider(mainSlider, miniSliders) {
    })
 }
 good__slider('.good__content__wrapper__slider__img img', '.good__content__wrapper__slider__mini__img img');
+
+
+
+function listenerClass(btnSelector1, btnSelector2, contentSelector1, contentSelector2) {
+   const btn1 = document.querySelector(btnSelector1);
+   const btn2 = document.querySelector(btnSelector2);
+   const content1 = document.querySelector(contentSelector1);
+   const content2 = document.querySelector(contentSelector2);
+   btn1.addEventListener('click', (e) => {
+      btn2.classList.remove('active__cont__btn');
+      e.target.classList.add('active__cont__btn');
+      content2.classList.add('active__cont__disble');
+      content1.classList.remove('active__cont__disble');
+   })
+   btn2.addEventListener('click', (e) => {
+      btn1.classList.remove('active__cont__btn');
+      e.target.classList.add('active__cont__btn');
+      content1.classList.add('active__cont__disble');
+      content2.classList.remove('active__cont__disble');
+   })
+}
+listenerClass(".good__content__listeners__top1", '.good__content__listeners__top2', '.first__cont', '.second__cont')
+
+
