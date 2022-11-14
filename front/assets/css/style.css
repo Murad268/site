@@ -405,7 +405,9 @@
 .good__content__wrapper {
    display: grid;
    grid-template-columns: 2fr 3fr;
-   column-gap: 30px
+   column-gap: 30px;
+   position: relative;
+
 }
 .good__content__wrapper__slider {
    height: 300px;
@@ -697,3 +699,30 @@
 .rate > label:hover ~ input:checked ~ label {
    color: #c59b08;
 }
+.good__content__top span {
+   float: right;
+   cursor: pointer;
+   font-size: 20px;
+}
+
+.categories__menu {
+   position: absolute;
+   width: 250px;
+   z-index: 10;
+   left: -100%;
+   transition: 0.5s;
+}
+.categories__menu .category__list {
+   background-color: white;
+}
+
+.categories__menu__active {
+   transition: 0.5s;
+   left: 0;
+}
+
+
+.modal-content {
+   
+}
+

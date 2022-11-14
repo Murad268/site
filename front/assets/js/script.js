@@ -63,4 +63,22 @@ function listenerClass(btnSelector1, btnSelector2, contentSelector1, contentSele
 }
 listenerClass(".good__content__listeners__top1", '.good__content__listeners__top2', '.first__cont', '.second__cont')
 
+function menuOpen(btnSelector, menuSelector, closeSelector) {
+   const btn = document.querySelector(btnSelector);
+   const menu = document.querySelector(menuSelector);
+   const close = document.querySelector(closeSelector);
+
+   btn.addEventListener("click", () => {
+      menu.classList.add('categories__menu__active')
+      close.style.display = "inline";
+      btn.style.display = "none";
+   })
+   close.addEventListener("click", () => {
+      menu.classList.remove('categories__menu__active');
+      close.style.display = "none";
+      btn.style.display = "inline";
+   })
+}
+menuOpen('.fa-bars', '.categories__menu', '.fa-window-close');
+
 
