@@ -77,8 +77,21 @@ function menuOpen(btnSelector, menuSelector, closeSelector) {
       menu.classList.remove('categories__menu__active');
       close.style.display = "none";
       btn.style.display = "inline";
-   })
+   });
 }
 menuOpen('.fa-bars', '.categories__menu', '.fa-window-close');
 
 
+function creditMonths(triggersSelector) {
+   const triggers = document.querySelectorAll(triggersSelector);
+   triggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+         triggers.forEach(trigger => {
+            trigger.classList.remove('creadit__modal__center__month__active');
+         })
+         trigger.classList.add('creadit__modal__center__month__active');
+      });
+   });
+}
+
+creditMonths('.creadit__modal__center__month');

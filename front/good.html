@@ -264,7 +264,7 @@
                <div class="paymethods">
                   <button class="text-danger">Bir kliklə al</button>
                   <button>Nəğd al</button>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Hissə - hissə al</button>
+                  <button type="button" class="btn  text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Hissə - hissə al</button>
                </div>
             </div>
          </div>
@@ -274,10 +274,10 @@
                   <div class="active__cont__btn good__content__listeners__top1">Xüsusiyyətlər</div>
                   <div class="good__content__listeners__top2">İstifadəçi rəyləri</div>
                </div>
-               <div class="active__cont__disble good__content__listeners__content first__cont">
+               <div class="good__content__listeners__content first__cont">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam adipisci fuga tenetur quis fugiat suscipit cupiditate doloremque at explicabo tempora, qui ex iure distinctio autem cumque unde nesciunt earum eaque impedit assumenda laboriosam iste. Fugiat quidem veritatis rerum minus sit sequi culpa nemo perspiciatis, ab, mollitia ipsam harum recusandae sapiente aut dolore vero voluptas ratione.
                </div>
-               <div class=" good__content__listeners__content second__cont">
+               <div class="active__cont__disble good__content__listeners__content second__cont">
                   <div class="good__content__listeners__content__comments">
                      <div class="good__content__listeners__content__comment">
                         <div>
@@ -387,74 +387,79 @@
    
    </div>
    
-    <div class="creadit__modal">
-      <div class="creadit__modal__top">
-         <div class="creadit__modal__top__left">
-            <img src="./assets/images/new-pic1.jpg" alt="">
-         </div>
-         <div class="creadit__modal__top__right">
-            <div class="creadit__modal__top__right__top">
-               <div class="modal__good_name">Televizor HOFFMANN LED 32F3700</div>
-               <div class="creadit__modal__top__right__top__count">
-                  <span class="mq">Miqdar</span> 
-                  <span>+ </span><input type="text"> <span>+</span>
-               </div>
-               <div class="creadit__modal__top__right__top__price">349.99 M</div>
-            </div>
-             <div class="creadit__modal__top__right__footer">
-               <select class="form-select" aria-label="Default select example">
-                  <option selected>Zəmanət əlavə et</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-             </div>
-         </div>
-      </div>
-      <div class="creadit__modal__center">
-         <div class="creadit__modal__center__months">
-            <div class="creadit__modal__center__month"><div>6ay</div></div>
-         </div>
-         <div class="creadit__modal__center__months">
-            <div class="creadit__modal__center__month"><div>6ay</div></div>
-         </div>
-         <div class="creadit__modal__center__months">
-            <div class="creadit__modal__center__month"><div>6ay</div></div>
-         </div>
-         <div class="creadit__modal__center__months">
-            <div class="creadit__modal__center__month"><div>6ay</div></div>
-         </div>
-         <div class="creadit__modal__center__months">
-            <div class="creadit__modal__center__month"><div>6ay</div></div>
-         </div>
-         <div class="creadit__modal__center__months">
-            <div class="creadit__modal__center__month"><div>6ay</div></div>
-         </div>
-      </div>
-      <div class="creadit__modal__prices">
-         <div class="creadit__modal__dur">
-            <div>Müddət:
-               <span>24 ay</span>
-            </div>
-         </div>
-         <div class="creadit__modal__dur">
-            <div>İlkin ödəniş:
-               <span>0 ⫙ </span>
-            </div>
-         </div>
-         <div class="creadit__modal__dur">
-            <div>İAylıq ödəniş:
-               <span>16.8  ⫙ </span>
-            </div>
-         </div>
-      </div>
-    </div>
+   
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        
-        </div>
+         <div class="creadit__modal modal-content">
+            <div data-bs-dismiss="modal" class="credit__modal__exit">
+               <i class="fa fa-window-close" aria-hidden="true"></i>
+            </div>
+            <div class="creadit__modal__top">
+               <div class="creadit__modal__top__left">
+                  <img src="./assets/images/new-pic1.jpg" alt="">
+               </div>
+               <div class="creadit__modal__top__right">
+                  <div class="creadit__modal__top__right__top">
+                     <div class="modal__good_name">Televizor HOFFMANN LED 32F3700</div>
+                     <div class="creadit__modal__top__right__top__count">
+                        <span class="mq">Miqdar</span> 
+                        <span>+ </span><input type="text"> <span>+</span>
+                     </div>
+                     <div class="creadit__modal__top__right__top__price">349.99 ⫙</div>
+                  </div>
+                   <div class="creadit__modal__top__right__footer">
+                     <select class="form-select" aria-label="Default select example">
+                        <option selected>Zəmanət əlavə et</option>
+                        <option value="1">İstifadəçi zəmanəti 0 ⫙</option>
+                        <option value="3">Qızıl zəmanət(1 il) - 35 ⫙</option>
+                        <option value="3">Qızıl zəmanət(2 il) - 53 ⫙</option>
+                        <option value="3">Qızıl zəmanət(3 il) - 70 ⫙</option>
+                        <option value="2">Qızıl zəmanət(6 ay) - 88 ⫙</option>
+                      </select>
+                   </div>
+               </div>
+            </div>
+            <div class="creadit__modal__center">
+               <div class="creadit__modal__center__months">
+                  <div class="creadit__modal__center__month creadit__modal__center__month__active"><div>6ay</div></div>
+               </div>
+               <div class="creadit__modal__center__months">
+                  <div class="creadit__modal__center__month"><div>9ay</div></div>
+               </div>
+               <div class="creadit__modal__center__months">
+                  <div class="creadit__modal__center__month"><div>12ay</div></div>
+               </div>
+               <div class="creadit__modal__center__months">
+                  <div class="creadit__modal__center__month"><div>15ay</div></div>
+               </div>
+               <div class="creadit__modal__center__months">
+                  <div class="creadit__modal__center__month"><div>18ay</div></div>
+               </div>
+               <div class="creadit__modal__center__months">
+                  <div class="creadit__modal__center__month"><div>24ay</div></div>
+               </div>
+            </div>
+            <div class="creadit__modal__prices">
+               <div class="creadit__modal__dur">
+                  <div>Müddət:
+                     <span>24 ay</span>
+                  </div>
+               </div>
+               <div class="creadit__modal__dur">
+                  <div>İlkin ödəniş:
+                     <span>0 ⫙ </span>
+                  </div>
+               </div>
+               <div class="creadit__modal__dur">
+                  <div>Aylıq ödəniş:
+                     <span>16.8  ⫙ </span>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <button class="credit__button">Sifarişi rəsmiləşdir <i class="fa 	fa-angle-right"></i></button>
+          </div>
       </div>
     </div>
    <div class="container">

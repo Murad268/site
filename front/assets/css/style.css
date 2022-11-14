@@ -722,12 +722,22 @@
 }
 
 
-.modal-content {
-   
+.creadit__modal {
+   position: relative;
+   width: max-content !important;
+   height: max-content;
+   padding: 100px;
+   margin-left: -270px;
 }
-
+.credit__modal__exit {
+   position: absolute;
+   top: 0;
+   right: 10px;
+   font-size: 40px;
+   cursor: pointer;
+   color: red;
+}
 .creadit__modal__top {
-   width: 750px;
    display: flex;
    justify-content: space-between;
    align-items: center
@@ -780,6 +790,12 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   transition: 0.4s;
+}
+.creadit__modal__center__month:hover {
+   background: red;
+   color: black;
+   transform: scale(1.2);
 }
 .creadit__modal__center__month div {
    width: 50px;
@@ -792,10 +808,41 @@
    cursor: pointer;
 }
 .creadit__modal__prices {
-   width: 800px;
+   width: 700px;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding-left: 110px;
+   padding-left: 190px;
    margin-top: 20px;
+}
+.creadit__modal__dur div {
+   text-align: center;
+   font-weight: 700;
+}
+.creadit__modal__dur div span {
+   font-size: 30px;
+   display: block;
+   font-weight: 900;
+}
+
+.credit__button {
+   float: right;
+   width: 200px;
+   margin-left: 70%;
+   border: none;
+   padding: 5px 0;
+}
+
+.creadit__modal__center__month {
+   color: #EEE;
+   font-weight: 700;
+}
+.creadit__modal__center__month__active {
+   background: red;
+   color: black;
+   transform: scale(1.2);
+}
+
+.creadit__modal__top__right__top__price {
+   font-weight: 900;
 }
