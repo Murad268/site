@@ -406,6 +406,10 @@
    padding: 15px;
    margin-top: 20px;
 }
+.good__content__top a {
+   text-decoration: none;
+   color: black;
+}
 .good__content__wrapper {
    display: grid;
    grid-template-columns: 2fr 3fr;
