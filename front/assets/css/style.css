@@ -726,7 +726,7 @@
    position: relative;
    width: max-content !important;
    height: max-content;
-   padding: 100px;
+   padding: 30px 80px;
    margin-left: -270px;
 }
 .credit__modal__exit {
@@ -845,4 +845,125 @@
 
 .creadit__modal__top__right__top__price {
    font-weight: 900;
+}
+
+.cart__el {
+   padding: 0 10px;
+}
+
+.cart__delete {
+   color: gray;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.cart-overflow {
+   overflow-x: scroll;
+}
+
+.cash__modal__pieces {
+   margin-left: 55%;
+   float: right;
+   border-bottom: 1px solid black;
+   margin-bottom: 10px;
+}
+.cash__modal__pieces__all, .cash__modal__pieces__end {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+.cash__modal__pieces__end {
+   margin-left: 55%;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+
+.cash__buttons {
+   width: 70%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 30px;
+}
+.cash__buttons button:first-child {
+   background: #7EA82B;
+   border: none;
+   padding: 10px 0;
+   width: 200px;
+   color: white;
+}
+.cash__buttons button:last-child {
+   background: #299802;
+   border: none;
+   padding: 10px 0;
+   width: 200px;
+   color: white;
+}
+.oneclick__modal{
+   width: max-content !important;
+   margin-left: -70px;
+   padding: 50px 0;
+}
+.oneclick__modal form{
+   width: 600px !important;
+   padding: 30px;
+}
+.oneclick__modal form>input {
+   background: #EEE;
+}
+.oneclick__modal form div{
+   width: 250px;
+   background: #EEE;
+   border-radius: 10px;
+   padding: 10px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center
+}
+.oneclick__modal form input{
+   margin-top: 3px;
+}
+.oneclick__modal form>div{
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+#cashInput, #crInput {
+   margin-right: 10px;
+}
+
+.oneclick__modal form button{
+   width: 200px;
+   background: #FF003C;
+   border: none;
+   color: white;
+   padding: 5px 0;
+   display: block;
+   margin: 20px auto 0 auto;
+   border-radius: 10px
+}
+
+.credit__info {
+   width: 100%;
+   display: none !important;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+
+.credit__info div {
+   width: max-content;
+   display: block !important;
+   background: white !important
+}
+.credit__info div input {
+   background: #EEE
+}
+
+.activeInfo {
+   display: flex !important;
 }

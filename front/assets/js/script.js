@@ -95,3 +95,18 @@ function creditMonths(triggersSelector) {
 }
 
 creditMonths('.creadit__modal__center__month');
+
+
+function orderType(cashInputSelector, creditInputSelector, creditInfoSelector) {
+   const cash = document.querySelector(cashInputSelector),
+         credit = document.querySelector(creditInputSelector);
+         creditInfo = document.querySelector(creditInfoSelector);
+         credit.addEventListener('change', () => {
+            creditInfo.classList.add("activeInfo")
+         })
+         cash.addEventListener('change', () => {
+            creditInfo.classList.remove("activeInfo")
+         })
+}
+
+orderType('#cashInput', '#crInput', '.credit__info');
