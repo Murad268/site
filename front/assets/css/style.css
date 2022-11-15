@@ -967,3 +967,48 @@
 .activeInfo {
    display: flex !important;
 }
+
+.goods__have {
+   display: flex;
+   width: max-content;
+   margin-top: 20px;
+}
+.goods__have .have{
+   color: green;
+   font-weight: 700;
+   margin-right: 60px;
+   font-size: 12px;
+}
+.goods__have .none{
+   color: red;
+   font-weight: 700;
+   margin-right: 60px;
+   font-size: 12px;
+   display: none;
+}
+.goods__code {
+   font-size: 12px;
+}
+
+.goods__views {
+   font-size: 12px;
+   margin-left: 60px;
+}
+.goods__have span {
+   font-weight: 700;
+}
+.views__awesome {
+   color: green;
+}
+.views__good {
+   color: blue;
+}
+.views__normal {
+   color: yellow;
+}
+.views__bad {
+   color: brown;
+}
+.views__nopopular {
+   color: red
+}
