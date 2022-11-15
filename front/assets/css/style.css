@@ -1329,9 +1329,50 @@
    text-align: justify;
 }
 
-.backContent ul, .backContent span {
+.backContent ul, .backContent span, .monthly ul, .monthly span{
    color: gray;
    padding: 0;
    line-height: 25px;
    text-align: justify;
+}
+.monthly li {
+   margin-bottom: 30px;  
+}
+.monthly li b {
+   color: black;
+   font-weight: 700;
+}
+.monthly img {
+   display: block;
+   width: 250px;
+   height: 300px;
+   margin-bottom: 20px;
+}
+.centers__wrapper {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   column-gap: 20px
+}
+.service__center {
+   text-align: center;
+   font-size: 13px;
+   color: gray
+}
+.service__center__adresess {
+   margin: 40px 0;
+}
+.service__center__name {
+   font-weight: 800;
+   font-size: 14px;
+   color: black;
+}
+.service__center__img {
+   width: 80%;
+   height: 70px;
+   margin: 0 auto;
+}
+.service__center__img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
 }
