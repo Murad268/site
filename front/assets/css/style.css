@@ -1305,3 +1305,26 @@
      font-size: 100px;
   }
 }
+
+.conf {
+   text-align: justify;
+   color: gray;
+}
+.standart {
+   font-size: 20px;
+}
+.standart__table {
+
+}
+.standart__table td {
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   padding: 10px 10px 30px 10px;
+   color: gray;
+}
+.piece__footer {
+   margin-top: 10px;
+   font-size: 15px;
+   color: gray;
+   line-height: 24px;
+   text-align: justify;
+}
