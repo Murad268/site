@@ -1012,3 +1012,49 @@
 .views__nopopular {
    color: red
 }
+
+.goods__tags {
+   width: max-content;
+   display: flex;
+   margin-top: 30px;
+   font-size: 12px;
+   margin-left: 60px;
+}
+.goods__tags div {
+   border: 1px solid;
+   margin: 0 10px 20px 0;
+   padding: 5px;
+   border-radius: 5px
+}
+.goods__tags div a {
+   text-decoration: none;
+}
+.goods__tags div:hover {
+   transform: scale(0.90);
+   transition: 0.6s;
+}
+.goods__tags div a:hover {
+   color: inherit;
+}
+.no__percent {
+   color: red;
+   border-color: red;
+}
+.no__percent a {
+   color: red;
+}
+
+.delovery__free {
+   color: blue;
+   border-color: blue;
+}
+.delovery__free a {
+   color: blue;
+}
+.top__sell {
+   color: green;
+   border-color: green;
+}
+.top__sell a {
+   color: green;
+}
