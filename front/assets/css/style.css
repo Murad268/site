@@ -1328,3 +1328,10 @@
    line-height: 24px;
    text-align: justify;
 }
+
+.backContent ul, .backContent span {
+   color: gray;
+   padding: 0;
+   line-height: 25px;
+   text-align: justify;
+}
