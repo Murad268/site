@@ -114,3 +114,29 @@ try {
 } catch {
    
 }
+
+let dropdowns = document.querySelectorAll('.dropdown-toggle')
+dropdowns.forEach((dd)=>{
+    dd.addEventListener('click', function (e) {
+        var el = this.nextElementSibling
+        el.style.display = el.style.display==='block'?'none':'block'
+    })
+})
+
+
+
+function multimenu(triggersSelector, menuSelector) {
+   const triggers = document.querySelectorAll(triggersSelector),
+         menu = document.querySelector(menuSelector);
+         triggers.forEach(trigger => {
+            trigger.addEventListener("click", () => {
+               document.querySelector(".shadow").style.visibility = "visible"
+               menu.style.width = "900px";
+               menu.style.background = "white"
+            });
+         });
+}
+
+multimenu('.multimenu', '.category__list');
+
+
