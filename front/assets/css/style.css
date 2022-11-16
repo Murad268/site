@@ -1376,3 +1376,24 @@
    height: 100%;
    object-fit: contain;
 }
+
+.terms {
+   color: gray;
+   text-align: justify;
+}
+.corporatives {
+   color: gray;
+}
+.corporatives ul {
+   margin: 0;
+   padding: 0;
+   list-style-type:decimal;
+   line-height: 25px;
+}
+.complaints ol {
+   padding: 0;
+   margin: 0;
+}
+.best div {
+   margin-top: 0;
+}
